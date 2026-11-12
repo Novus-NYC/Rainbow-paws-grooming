@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { businessInfo, primaryActions } from "@/lib/site-data"
+import { businessInfo, primaryActions } from "@/lib/data/business"
 import { OrganicShape } from "@/lib/components/photo-accents"
 
 export function HomeHero() {

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
-import { bookingNotes, businessInfo, navigation, primaryActions } from "@/lib/site-data"
+import { businessInfo, navigation, primaryActions } from "@/lib/data/business"
+import { sameDayBookingNote } from "@/lib/data/support"
 
 export default function Footer() {
   const address = businessInfo.address
@@ -71,7 +72,7 @@ export default function Footer() {
           <div>
             <h3>Hours</h3>
             <p>{businessInfo.hours}</p>
-            <p>{bookingNotes[1]}</p>
+            <p>{sameDayBookingNote}</p>
           </div>
         </div>
 

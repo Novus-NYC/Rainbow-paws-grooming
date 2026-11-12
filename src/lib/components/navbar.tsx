@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
-import { businessInfo, navigation, primaryActions } from "@/lib/site-data"
+import { businessInfo, navigation, primaryActions } from "@/lib/data/business"
 
 export default function Navbar() {
   const pathname = usePathname()
@@ -32,7 +32,7 @@ export default function Navbar() {
           <p>
             {businessInfo.address.street}, {businessInfo.address.city},{" "}
             {businessInfo.address.region} {businessInfo.address.postalCode}.
-            <span className="site-utility-note"> Private studio, by appointment.</span>
+            <span className="site-utility-note"> {businessInfo.appointmentNote}</span>
           </p>
           <a href={businessInfo.phone.href}>{businessInfo.phone.display}</a>
         </div>

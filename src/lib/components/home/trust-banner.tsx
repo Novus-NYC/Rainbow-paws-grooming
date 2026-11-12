@@ -1,4 +1,4 @@
-import { trustSignals } from "@/lib/site-data"
+import { trustSignals } from "@/lib/data/business"
 import { PawPrint } from "@/lib/components/photo-accents"
 
 export function TrustBanner() {
