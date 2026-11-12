@@ -1,62 +1,30 @@
-# Purpose
-This repository is the base template that should be used for all future businesses, including basic files such as navbar, footer, and other configs.
+# Rainbow Paws Grooming
 
-# Business Name
+The Rainbow Paws website introduces the private Brooklyn grooming studio, its services, photos, and contact details.
 
-Replace this README with business-specific details.
+## Routes
 
----
+- `/` — Homepage
+- `/about` — About Rainbow Paws
+- `/services` — Grooming services and pricing
+- `/contact` — Contact and appointment details
+- `/gallery` — Grooming photo gallery
 
-## 🚀 Overview
+## Project structure
 
-Short description of the business and what this website is for.
+- `src/app` — App Router pages, root layout, and global styles
+- `src/lib/components` — Shared site components
+- `src/lib/components/home` — Homepage sections
+- `src/lib/data` — Centralized business, service, FAQ, review, and gallery content
+- `public` — Logo and photography assets
 
-Example:
-"This website serves as the official online presence for [Business Name], showcasing services, contact information, and brand identity."
+## Development
 
----
-
-## 🛠 Tech Stack
-
-- Next.js (App Router)
-- TypeScript
-- Tailwind CSS
-- Hosted on Vercel
-
----
-
-## 📂 Project Structure
-
-- `src/app` → App Router (homepage, layout, globals)
-- `src/app/pages` → Site pages (About, Contact, etc.)
-- `src/lib/components` → Shared UI components (Navbar/Footer)
-- `public` → Static assets
-
----
-
-## 🧑‍💻 Development
-
-Install dependencies:
+Install the locked dependencies and start the local development server:
 
 ```bash
-npm install
-npm install --save-dev @types/react
-```
-
-Run locally:
-
-```bash
+npm ci
 npm run dev
 ```
 
----
-
-## ✏️ Customization Checklist
-
-- [ ] Replace Business Name in navbar + footer
-- [ ] Update metadata in `src/app/layout.tsx`
-- [ ] Replace homepage content (`src/app/page.tsx`)
-- [ ] Update About + Contact pages (`src/app/pages/*`)
-- [ ] Replace favicon + assets in `public/`
-- [ ] Update SEO metadata
-- [ ] (Optional) Update Novus credit link text / URL in the footer
+Create a production build with `npm run build`. Run the TypeScript check with `npm run typecheck`.
