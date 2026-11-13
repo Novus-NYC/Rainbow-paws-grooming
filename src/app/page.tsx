@@ -4,6 +4,7 @@ import HomepageAbout from "@/lib/components/home/homepage-about"
 import { VisitSteps } from "@/lib/components/home/visit-steps"
 import { HomeServices } from "@/lib/components/home/home-services"
 import { HomeGallery } from "@/lib/components/home/home-gallery"
+import { HomeReviews } from "@/lib/components/home/home-reviews"
 import { primaryActions } from "@/lib/data/business"
 
 export default function HomePage() {
@@ -21,6 +22,7 @@ export default function HomePage() {
       <VisitSteps />
       <HomeServices />
       <HomeGallery />
+      <HomeReviews />
     </>
   )
 }
