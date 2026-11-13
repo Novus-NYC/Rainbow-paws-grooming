@@ -1,4 +1,5 @@
 .rp-home-about {
+  z-index: 3;
   --rp-ink: var(--ink, #12302f);
   --rp-aqua: var(--aqua, #00ced1);
   --rp-peach: var(--peach, #f5c3ab);
@@ -8,8 +9,8 @@
 
   position: relative;
   isolation: isolate;
-  width: 100vw;
-  margin-inline: calc(50% - 50vw);
+  width: 100%;
+  margin-inline: 0;
   padding: 104px 0 176px;
   background: #fff;
   color: var(--rp-ink);
@@ -226,12 +227,12 @@
   }
 
   .rp-home-about__inner {
-    width: min(calc(100vw - 48px), 100%);
+    width: min(calc(100% - 48px), 100%);
     gap: 42px;
   }
 
   .rp-home-about__visual {
-    width: min(calc(100vw - 96px), 420px);
+    width: min(calc(100% - 48px), 420px);
     max-width: 100%;
   }
 
