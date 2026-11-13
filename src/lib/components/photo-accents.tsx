@@ -14,6 +14,40 @@ export function PawPrint({ className }: PhotoAccentProps) {
   )
 }
 
+export function HeartDoodle({ className }: PhotoAccentProps) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 32 32"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M16 27S3.5 19.2 3.5 10.8A6.3 6.3 0 0 1 16 9.4a6.3 6.3 0 0 1 12.5 1.4C28.5 19.2 16 27 16 27Z" />
+    </svg>
+  )
+}
+
+export function SparkleDoodle({ className }: PhotoAccentProps) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 32 32"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M16 2.5c1.1 8.1 4.4 11.4 12.5 13.5-8.1 1.1-11.4 4.4-12.5 13.5C14.9 20.9 11.6 17.6 3.5 16 11.6 14.9 14.9 11.6 16 2.5Z" />
+    </svg>
+  )
+}
+
 export function BurstDoodle({ className }: PhotoAccentProps) {
   return (
     <svg
