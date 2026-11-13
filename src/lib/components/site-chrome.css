@@ -141,7 +141,8 @@
 
 .site-footer {
   position: relative;
-  overflow: hidden;
+  z-index: 9;
+  overflow: visible;
   border-radius: 4.5rem 4.5rem 0 0;
   background: var(--ink);
   color: #fff;

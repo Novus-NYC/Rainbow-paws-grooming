@@ -14,7 +14,8 @@
   isolation: isolate;
 }
 
-.section-rainbow::before {
+.section-rainbow::before,
+.site-footer::before {
   position: absolute;
   top: -34px;
   left: 50%;
