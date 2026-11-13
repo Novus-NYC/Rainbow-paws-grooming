@@ -2,6 +2,7 @@ import { HomeHero } from "@/lib/components/home/home-hero"
 import { TrustBanner } from "@/lib/components/home/trust-banner"
 import HomepageAbout from "@/lib/components/home/homepage-about"
 import { VisitSteps } from "@/lib/components/home/visit-steps"
+import { HomeServices } from "@/lib/components/home/home-services"
 import { primaryActions } from "@/lib/data/business"
 
 export default function HomePage() {
@@ -17,6 +18,7 @@ export default function HomePage() {
         bookHref={primaryActions.booking.href}
       />
       <VisitSteps />
+      <HomeServices />
     </>
   )
 }
