@@ -327,4 +327,8 @@
   .home-gallery__progress li {
     transition: none;
   }
+
+  .home-gallery__button:hover {
+    transform: none;
+  }
 }

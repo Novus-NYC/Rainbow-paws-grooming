@@ -335,4 +335,13 @@
     animation: none;
     transition: none;
   }
+
+  .home-visit--reveal-ready .home-visit__step {
+    opacity: 1;
+    transform: none;
+  }
+
+  .home-visit__button:hover {
+    transform: none;
+  }
 }

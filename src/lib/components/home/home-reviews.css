@@ -387,4 +387,10 @@
   .home-reviews__progress li {
     transition: none;
   }
+
+  .home-reviews__ticket--cta a:hover,
+  .home-reviews__arrow:hover,
+  .home-reviews__arrow:active {
+    transform: none;
+  }
 }

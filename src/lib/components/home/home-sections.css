@@ -289,11 +289,4 @@
   .home-hero-photo-frame {
     animation: none;
   }
-
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
 }

@@ -3,12 +3,13 @@
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { businessInfo, navigation, primaryActions } from "@/lib/data/business"
 
 export default function Navbar() {
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
+  const menuToggleRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     setMenuOpen(false)
@@ -18,7 +19,10 @@ export default function Navbar() {
     if (!menuOpen) return
 
     const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setMenuOpen(false)
+      if (event.key === "Escape") {
+        setMenuOpen(false)
+        menuToggleRef.current?.focus()
+      }
     }
 
     window.addEventListener("keydown", closeOnEscape)
@@ -69,6 +73,7 @@ export default function Navbar() {
           </Link>
 
           <button
+            ref={menuToggleRef}
             className="nav-menu-toggle"
             type="button"
             aria-expanded={menuOpen}

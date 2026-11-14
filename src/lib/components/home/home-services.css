@@ -176,4 +176,8 @@
   .home-services__button {
     transition: none;
   }
+
+  .home-services__button:hover {
+    transform: none;
+  }
 }

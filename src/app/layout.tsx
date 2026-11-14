@@ -49,8 +49,11 @@ export default function RootLayout({
       className={`${fraunces.variable} ${figtree.variable} ${caveat.variable}`}
     >
       <body className="min-h-screen flex flex-col font-sans">
+        <a className="skip-link" href="#main-content">
+          Skip to main content
+        </a>
         <Navbar />
-        <main id="main-content" className="flex-1">
+        <main id="main-content" className="flex-1" tabIndex={-1}>
           {children}
         </main>
         <Footer />

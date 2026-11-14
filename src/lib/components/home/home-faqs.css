@@ -121,6 +121,10 @@
   transform: translateY(-2px);
 }
 
+.home-faqs__intro :focus-visible {
+  outline-color: var(--aqua);
+}
+
 @media (max-width: 980px) {
   .home-faqs {
     margin-top: -44px;
@@ -173,5 +177,9 @@
   .home-faqs__accordion summary::after,
   .home-faqs__all-link {
     transition: none;
+  }
+
+  .home-faqs__all-link:hover {
+    transform: none;
   }
 }

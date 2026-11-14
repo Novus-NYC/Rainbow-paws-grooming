@@ -31,7 +31,11 @@ export function HomeFaqs() {
         </aside>
 
         <div className="home-faqs__content">
-          <div className="home-faqs__accordion" aria-label="Frequently asked questions">
+          <div
+            className="home-faqs__accordion"
+            role="group"
+            aria-label="Frequently asked questions"
+          >
             {homepageFaqs.map((item) => (
               <details name="homepage-faq" key={item.question}>
                 <summary>{item.question}</summary>

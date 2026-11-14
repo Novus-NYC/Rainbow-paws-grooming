@@ -265,4 +265,8 @@
   .rp-home-about__button {
     transition: none;
   }
+
+  .rp-home-about__button:hover {
+    transform: none;
+  }
 }
