@@ -37,11 +37,7 @@
   --section-space: 6.5rem;
   --nav-height: 4.875rem;
   --radius-control: 0.5rem;
-  --photo-radius: 1.25rem;
-  --photo-outline: rgb(18 48 47 / 12%);
-  --photo-shadow: 0 14px 30px -24px rgb(18 48 47 / 55%);
   --photo-accent-soft: var(--tint);
-  --photo-accent-warm: var(--peach);
 }
 
 *,

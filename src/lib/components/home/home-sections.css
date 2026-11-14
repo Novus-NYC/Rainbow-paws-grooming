@@ -39,25 +39,6 @@
 }
 
 
-.photo-frame {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid var(--photo-outline);
-  border-radius: var(--photo-radius);
-  box-shadow: var(--photo-shadow);
-}
-
-.photo-frame--organic {
-  border-radius: 58% 42% 55% 45% / 50% 58% 42% 50%;
-}
-
-.photo-frame > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .home-hero-inner {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);

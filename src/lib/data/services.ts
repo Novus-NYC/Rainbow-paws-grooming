@@ -144,14 +144,3 @@ export const colorStudio = {
   bookingNote:
     "Coloring services must be booked alongside a Comfort Bath, Refresh Groom, or our Paws Signature grooming package. It is not a stand-alone service. Full body transformations require a free consultation in advance and are not suitable for puppies under 9 months, or dogs that are behaviorally challenging or receiving a Miracle Makeover.",
 } as const
-
-export const serviceAreas = [
-  "East New York",
-  "Brownsville",
-  "Canarsie",
-  "Bedford-Stuyvesant",
-  "Park Slope",
-  "Crown Heights",
-  "Howard Beach",
-  "Flatbush",
-] as const

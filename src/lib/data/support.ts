@@ -62,12 +62,5 @@ export const reviews = [
   },
 ] satisfies Review[]
 
-export const bookingIntro =
-  "Same day appointments may be available. Request a time below, or call to check availability."
-
-export const bookingNotes = [
-  "After you request a time, Wynter reviews your dog’s needs and confirms the best service, timing, and pricing.",
-  "Same day and after-hours appointments by request when scheduling permits.",
-] as const
-
-export const sameDayBookingNote = bookingNotes[1]
+export const sameDayBookingNote =
+  "Same day and after-hours appointments by request when scheduling permits."
