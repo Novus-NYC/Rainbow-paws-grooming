@@ -1,12 +1,44 @@
 export const galleryItems = [
-  { src: "/gallery/anxious-dog-1.webp", alt: "A dog from the anxious dog grooming gallery", category: "Gentle grooming" },
-  { src: "/gallery/anxious-dog-2.webp", alt: "A dog from the anxious dog grooming gallery", category: "Gentle grooming" },
-  { src: "/gallery/challenging-dog-1.webp", alt: "A dog from the challenging dog grooming gallery", category: "One-on-one care" },
-  { src: "/gallery/fun-style-1.webp", alt: "A dog from the creative grooming gallery", category: "Creative styles" },
-  { src: "/gallery/hair-dye-1.webp", alt: "A dog from the color grooming gallery", category: "Pet-safe color" },
-  { src: "/gallery/miracle-makeover-1.webp", alt: "A dog from the makeover grooming gallery", category: "Makeovers" },
-  { src: "/gallery/puppy-1.webp", alt: "A puppy from the grooming gallery", category: "Puppies" },
-  { src: "/gallery/senior-dog-1.webp", alt: "A senior dog from the grooming gallery", category: "Senior dogs" },
+  {
+    src: "/gallery/anxious-dog-1.webp",
+    alt: "A shaggy light-colored dog in a blue tub beside a neatly groomed dog wearing a colorful neck scarf.",
+    category: "Gentle grooming",
+  },
+  {
+    src: "/gallery/anxious-dog-2.webp",
+    alt: "A shaggy tan dog beside a shorter trim with a patterned bandana.",
+    category: "Gentle grooming",
+  },
+  {
+    src: "/gallery/challenging-dog-1.webp",
+    alt: "A groomer brushing a small white curly-coated dog beside a freshly groomed portrait with a blue bandana.",
+    category: "One-on-one care",
+  },
+  {
+    src: "/gallery/fun-style-1.webp",
+    alt: "A cream-colored dog with rainbow color on its tail and ears during a grooming appointment.",
+    category: "Creative styles",
+  },
+  {
+    src: "/gallery/hair-dye-1.webp",
+    alt: "A freshly groomed cream-colored curly-coated dog wearing a green and purple bandana.",
+    category: "Pet-safe color",
+  },
+  {
+    src: "/gallery/miracle-makeover-1.webp",
+    alt: "A gray-and-white dog with a shaggy coat beside a shorter trim with an orange patterned bandana.",
+    category: "Makeovers",
+  },
+  {
+    src: "/gallery/puppy-1.webp",
+    alt: "A small tan puppy shown in three grooming-studio portraits.",
+    category: "Puppies",
+  },
+  {
+    src: "/gallery/senior-dog-1.webp",
+    alt: "A small white dog wearing a red harness beside a portrait with a dark floral bandana.",
+    category: "Senior dogs",
+  },
 ] as const
 
 export const homepageGalleryItems = [
