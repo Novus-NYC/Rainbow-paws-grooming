@@ -11,7 +11,21 @@
   color: var(--ink);
 }
 
+.home-reviews::after {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: -4.5rem;
+  left: 0;
+  height: 4.5rem;
+  background: var(--aqua);
+  content: "";
+  pointer-events: none;
+}
+
 .home-reviews__inner {
+  position: relative;
+  z-index: 1;
   width: min(100%, 1120px);
   margin: 0 auto;
   padding-inline: 22px;
@@ -341,6 +355,11 @@
 @media (max-width: 560px) {
   .home-reviews {
     --sp: 80px;
+  }
+
+  .home-reviews::after {
+    bottom: -2.75rem;
+    height: 2.75rem;
   }
 
   .home-reviews__scroller {

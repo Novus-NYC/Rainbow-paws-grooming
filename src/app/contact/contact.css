@@ -1,0 +1,847 @@
+.contact-page {
+  background: #fff;
+  color: var(--ink);
+}
+
+/* Contact intro follows the pale split hero used by the inner-page mockup. */
+.contact-page__hero {
+  position: relative;
+  overflow-x: clip;
+  padding: 4rem 0 calc(var(--section-space) + 1.5rem);
+  background: var(--mist);
+}
+
+.contact-page__hero-inner,
+.contact-page__booking-inner,
+.contact-page__answers-inner {
+  width: min(var(--content-width), 100%);
+  min-width: 0;
+  margin-inline: auto;
+  padding-inline: var(--page-gutter);
+}
+
+.contact-page__hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
+  align-items: center;
+  gap: 3rem;
+}
+
+.contact-page__hero-copy h1 {
+  max-width: 12ch;
+  color: var(--ink);
+  font-size: clamp(2.5rem, 5.4vw, 4.5rem);
+  text-wrap: balance;
+}
+
+.contact-page__lead {
+  max-width: 44ch;
+  margin: 1.125rem 0 0;
+  font-size: 1.1875rem;
+}
+
+.contact-page__same-day {
+  padding: 1.875rem;
+  border-radius: 1.75rem;
+  background: var(--deep);
+  color: #fff;
+}
+
+.contact-page__same-day h2 {
+  margin: 0 0 0.5rem;
+  color: #fff;
+  font-size: 1.875rem;
+}
+
+.contact-page__same-day p {
+  margin: 0 0 1rem;
+  color: var(--on-dark-muted);
+}
+
+.contact-page__button-icon {
+  display: inline-flex;
+  width: 1.125rem;
+  flex: 0 0 1.125rem;
+  margin-right: 0.5rem;
+}
+
+.contact-page__button-icon svg,
+.contact-page__info-icon svg,
+.contact-page__social-icon svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.contact-page__button-icon svg {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.contact-page__same-day .home-hero-button {
+  max-width: 100%;
+  border-color: var(--aqua);
+  white-space: normal;
+}
+
+/* The booking and visit area uses the mockup's rounded white section and two-column grid. */
+.contact-page__booking {
+  position: relative;
+  z-index: 1;
+  margin-top: -4.5rem;
+  padding: calc(var(--section-space) + 1.5rem) 0 calc(var(--section-space) + 4.5rem);
+  border-radius: 4.5rem 4.5rem 0 0;
+  background: #fff;
+}
+
+.contact-page__booking-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  align-items: start;
+  gap: 3rem;
+}
+
+.contact-page__square-panel {
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  padding: 2.125rem;
+  border-radius: 1.75rem;
+  background: var(--deep);
+  color: var(--ink);
+}
+
+.contact-page__booking-copy {
+  margin-bottom: 1.5rem;
+}
+
+.contact-page__booking-copy .contact-page__handwritten {
+  margin-bottom: 0.5rem;
+  color: var(--deep);
+}
+
+.contact-page__booking-copy h2 {
+  margin: 0 0 0.625rem;
+  color: var(--ink);
+  font-size: clamp(1.75rem, 3vw, 2.375rem);
+}
+
+.contact-page__booking-copy > p:last-child {
+  max-width: 62ch;
+  margin: 0;
+}
+
+.contact-page__booking-fallback {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  margin: 1rem 0 0;
+  padding: 0.75rem 0.875rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--mist);
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.contact-page__booking-fallback svg {
+  width: 1.125rem;
+  height: 1.125rem;
+  flex: 0 0 1.125rem;
+  margin-top: 0.05rem;
+  color: var(--deep);
+}
+
+.contact-page__booking-fallback p {
+  margin: 0;
+}
+
+.contact-page__booking-fallback a {
+  font-weight: 700;
+  text-underline-offset: 0.15em;
+}
+
+.contact-page__square-surface {
+  min-width: 0;
+  min-height: 31.5rem;
+  border: 3px dashed var(--deep);
+  border-radius: 0.75rem;
+  padding: 0.625rem;
+  background: #fff;
+  overflow: hidden;
+}
+
+.contact-page__square-frame {
+  display: block;
+  width: 100%;
+  height: 31.5rem;
+  border: 0;
+  background: #fff;
+}
+
+.contact-page__studio {
+  align-self: start;
+  padding: 2.125rem 1.875rem;
+  border: 3px dashed var(--deep);
+  border-radius: 1.5rem;
+  background: var(--mist);
+}
+
+.contact-page__studio h2,
+.contact-page__faq h2 {
+  margin: 0 0 1.125rem;
+  font-size: 2.125rem;
+}
+
+.contact-page__studio-details {
+  display: grid;
+  gap: 1.375rem;
+  margin: 0 0 1.625rem;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-page__studio-details li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+  min-width: 0;
+}
+
+.contact-page__studio-details li > span:last-child {
+  min-width: 0;
+  font-size: 1.0625rem;
+  line-height: 1.45;
+}
+
+.contact-page__studio-details strong {
+  display: block;
+  color: var(--deep);
+  font-size: 0.9375rem;
+}
+
+.contact-page__studio-details a {
+  text-underline-offset: 0.15em;
+}
+
+.contact-page__info-icon {
+  display: grid;
+  width: 2.375rem;
+  height: 2.375rem;
+  flex: 0 0 2.375rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--deep);
+  color: #fff;
+  margin-top: 0.2rem;
+}
+
+.contact-page__info-icon svg {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.contact-page__studio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+}
+
+.contact-page__studio-actions .home-hero-button {
+  min-height: 3.125rem;
+  padding-inline: 1.25rem;
+}
+
+.contact-page__studio-actions .home-hero-button-primary {
+  border-color: var(--deep);
+  background: var(--deep);
+  color: #fff;
+}
+
+.contact-page__studio-actions .home-hero-button-secondary {
+  border-color: currentColor;
+  color: var(--ink);
+}
+
+.contact-page__map {
+  display: block;
+  width: 100%;
+  height: 11rem;
+  margin-top: 1.5rem;
+  border: 2px solid var(--deep);
+  border-radius: 0.875rem;
+  background: var(--mist);
+}
+
+.contact-page__social {
+  position: relative;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 2.125rem 2.375rem 2.625rem;
+  border-radius: 2rem;
+  background:
+    linear-gradient(
+      90deg,
+      var(--r1),
+      var(--r2),
+      var(--r3),
+      var(--r4),
+      var(--r5),
+      var(--r6),
+      var(--r7)
+    ) bottom / 100% 0.5rem no-repeat,
+    var(--aqua);
+}
+
+
+.contact-page__handwritten {
+  margin: 0 0 0.25rem;
+  color: var(--deep);
+  font: 600 1.625rem/1 var(--font-handwritten);
+}
+
+.contact-page__social h2 {
+  max-width: 14em;
+  font-size: clamp(1.75rem, 3.4vw, 2.625rem);
+}
+
+.contact-page__social p:not(.contact-page__handwritten) {
+  margin: 0.35rem 0 0;
+}
+
+.contact-page__social-links {
+  display: flex;
+  justify-self: end;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+}
+
+.contact-page__social-links a {
+  display: flex;
+  min-height: 3.75rem;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 250ms ease;
+}
+
+.contact-page__social-links a:hover {
+  transform: translateY(-3px);
+}
+
+.contact-page__social-icon {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 2.75rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--deep);
+  color: #fff;
+}
+
+.contact-page__social-icon svg {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+.contact-page__social-links strong,
+.contact-page__social-links small {
+  display: block;
+  line-height: 1.3;
+}
+
+.contact-page__social-links small {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Why and FAQs repeat the mockup's dark-card / light-panel pairing. */
+.contact-page__answers {
+  position: relative;
+  margin-top: -4.5rem;
+  padding: calc(var(--section-space) + 1.5rem) 0 calc(var(--section-space) + 4.5rem);
+  border-radius: 4.5rem 4.5rem 0 0;
+  background: var(--tint);
+}
+
+.contact-page__answers-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: start;
+  gap: 3.5rem;
+}
+
+.contact-page__why {
+  padding: 2.5rem 2.125rem;
+  border-radius: 1.75rem;
+  background: var(--deep);
+  color: #fff;
+}
+
+.contact-page__why h2 {
+  color: #fff;
+  font-size: clamp(2rem, 3.4vw, 2.625rem);
+}
+
+.contact-page__why-intro {
+  margin: 0.875rem 0 1.5rem;
+  color: var(--on-dark-muted);
+}
+
+.contact-page__highlights {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-page__highlights li {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.contact-page__highlights li span {
+  display: grid;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: 0 0 1.25rem;
+  place-items: center;
+  color: var(--aqua);
+}
+
+.contact-page__highlight-paw {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: 0 0 1.25rem;
+  color: var(--aqua);
+}
+
+.contact-page__why > .home-hero-button {
+  margin-top: 1.25rem;
+}
+
+.contact-page__story {
+  margin: 1rem 0 0;
+  border-top: 1px solid rgb(255 255 255 / 38%);
+  border-bottom: 1px solid rgb(255 255 255 / 38%);
+}
+
+.contact-page__story summary,
+.contact-page__faq-list summary {
+  display: flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  font: 600 1.125rem/1.2 var(--font-display);
+  list-style: none;
+}
+
+.contact-page__story summary::-webkit-details-marker,
+.contact-page__faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.contact-page__story summary::after,
+.contact-page__faq-list summary::after {
+  display: grid;
+  width: 2.125rem;
+  height: 2.125rem;
+  flex: 0 0 2.125rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--aqua);
+  color: var(--ink);
+  content: "+";
+  font: 700 1.375rem/1 var(--font-body);
+  transition: transform 250ms ease;
+}
+
+.contact-page__story summary::after {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-basis: 1.75rem;
+  font-size: 1.125rem;
+}
+
+.contact-page__story[open] summary::after,
+.contact-page__faq-list details[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.contact-page__story > div {
+  padding: 0.25rem 0 0.5rem;
+  color: var(--on-dark-muted);
+}
+
+.contact-page__story p {
+  margin: 0 0 0.65rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.contact-page__faq h2 {
+  margin-bottom: 0.875rem;
+}
+
+.contact-page__faq {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: #fff;
+}
+
+.contact-page__faq-help {
+  margin: 0 0 1.125rem;
+}
+
+.contact-page__faq-help a,
+.contact-page__faq-list a {
+  font-weight: 700;
+  text-underline-offset: 0.15em;
+}
+
+.contact-page__faq-list details {
+  border-top: 2px solid var(--border);
+}
+
+.contact-page__faq-list details:last-child {
+  border-bottom: 2px solid var(--border);
+}
+
+.contact-page__faq-list summary {
+  padding-block: 1.25rem;
+}
+
+.contact-page__faq-list details > p {
+  max-width: 56ch;
+  margin: 0;
+  padding: 0 3.125rem 1.375rem 0;
+}
+
+@media (max-width: 980px) {
+  .contact-page__hero-inner,
+  .contact-page__booking-inner,
+  .contact-page__answers-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-page__hero-inner {
+    gap: 2rem;
+  }
+
+  .contact-page__same-day {
+    max-width: 42rem;
+  }
+
+  .contact-page__booking-inner {
+    gap: 2.5rem;
+  }
+
+  .contact-page__social {
+    grid-column: auto;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-page__social-links {
+    justify-self: start;
+  }
+
+  .contact-page__answers-inner {
+    max-width: 48rem;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-page__square-panel {
+    padding: 1.25rem;
+  }
+
+  .contact-page__square-surface,
+  .contact-page__square-frame {
+    min-height: 36rem;
+    height: 36rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact-page__hero {
+    padding-top: 2.5rem;
+  }
+
+  .contact-page__hero-inner,
+  .contact-page__booking-inner,
+  .contact-page__answers-inner {
+    padding-inline: 1.125rem;
+  }
+
+  .contact-page__hero-copy h1 {
+    font-size: clamp(2.5rem, 11vw, 3.25rem);
+  }
+
+  .contact-page__same-day {
+    padding: 1.5rem;
+  }
+
+  .contact-page__booking,
+  .contact-page__answers {
+    margin-top: -2.75rem;
+    padding-top: calc(var(--section-space) + 1rem);
+    padding-bottom: calc(var(--section-space) + 2rem);
+    border-radius: 2.75rem 2.75rem 0 0;
+  }
+
+  .contact-page__square-panel {
+    padding: 0.875rem;
+    border-radius: 1.25rem;
+  }
+
+  .contact-page__square-surface,
+  .contact-page__square-frame {
+    min-height: 38rem;
+    height: 38rem;
+  }
+
+  .contact-page__studio {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .contact-page__faq {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .contact-page__studio h2,
+  .contact-page__faq h2 {
+    font-size: 1.875rem;
+  }
+
+  .contact-page__studio-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-page__social {
+    padding: 1.5rem 1.25rem 2rem;
+    border-radius: 1.5rem;
+  }
+
+  .contact-page__social-links {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contact-page__social-links a {
+    width: 100%;
+  }
+
+  .contact-page__why {
+    padding: 1.75rem 1.375rem;
+  }
+
+  .contact-page__faq-list details > p {
+    padding-right: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-page__social-links a,
+  .contact-page__story summary::after,
+  .contact-page__faq-list summary::after {
+    transition: none;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/* Warm card system: offset shapes, soft backdrops, doodles                 */
+/* Same recipe as the services and about pages.                             */
+/* ---------------------------------------------------------------------- */
+.contact-page {
+  overflow-x: clip;
+}
+
+/* Hero keeps its pale background. These just make the offsets/blobs stack
+   correctly (negative z-index stays inside the section). */
+.contact-page__hero,
+.contact-page__answers {
+  isolation: isolate;
+}
+
+.contact-page__hero-inner,
+.contact-page__hero-copy,
+.contact-page__faq {
+  position: relative;
+}
+
+/* Offset shape behind each card. Solid colour, no outline. */
+.contact-page__same-day,
+.contact-page__square-panel,
+.contact-page__studio,
+.contact-page__social,
+.contact-page__why {
+  position: relative;
+  isolation: isolate;
+  --ox: 12px;
+  --oy: 12px;
+}
+
+.contact-page__same-day::before,
+.contact-page__square-panel::before,
+.contact-page__studio::before,
+.contact-page__social::before,
+.contact-page__why::before {
+  content: none;
+}
+
+.contact-page__same-day { --offset: var(--aqua); }
+.contact-page__studio { --offset: var(--r3); }
+.contact-page__why { --offset: var(--aqua); --ox: -12px; }
+
+/* A solid shadow makes the offset visible behind each card's own background. */
+.contact-page__same-day,
+.contact-page__studio,
+.contact-page__why {
+  box-shadow: var(--ox) var(--oy) 0 var(--offset);
+}
+
+/* Outline around the booking embed: white gap, then a deep outline. */
+.contact-page__square-surface {
+  box-shadow: 0 0 0 4px #fff;
+}
+
+.contact-page__square-panel::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border: 2px solid var(--deep);
+  border-radius: inherit;
+  background: #fff;
+  content: "";
+  transform: translate(12px, 12px);
+}
+
+/* Doodle layer inside a card. It is a size container, so <Accent> sizes and
+   positions (cqw) scale with the card. Nothing here is clipped. */
+.contact-page__deco {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  container-type: inline-size;
+  pointer-events: none;
+}
+
+/* the wide social card would make doodles tiny on phones */
+.contact-page__deco--wide .accent {
+  width: max(var(--s), 2.25rem);
+  height: max(var(--s), 2.25rem);
+}
+
+/* Social card: buttons on the left, text on the right. DOM order stays
+   text first so phones and screen readers read the heading first. */
+.contact-page__social {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+/* Soft backdrop blobs, same idea as the photo collages. */
+.contact-page__blob {
+  position: absolute;
+  z-index: -1;
+  background: var(--blob, var(--aqua));
+  opacity: var(--blob-o, 0.2);
+  border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  pointer-events: none;
+}
+
+.contact-page__blob--hero {
+  --blob-o: 0.3;
+  top: -3rem;
+  right: -4rem;
+  width: min(30rem, 80%);
+  aspect-ratio: 1.15;
+}
+
+.contact-page__blob--booking-a {
+  --blob-o: 0.16;
+  top: 3rem;
+  left: -6rem;
+  width: min(34rem, 70vw);
+  aspect-ratio: 1.1;
+}
+
+.contact-page__blob--booking-b {
+  --blob: var(--r3);
+  --blob-o: 0.28;
+  top: 12rem;
+  right: -5rem;
+  width: min(24rem, 60vw);
+  aspect-ratio: 1;
+  border-radius: 42% 58% 39% 61% / 55% 40% 60% 45%;
+}
+
+.contact-page__blob--answers-a {
+  --blob: var(--r3);
+  --blob-o: 0.35;
+  top: 4rem;
+  left: -5rem;
+  width: min(30rem, 70vw);
+  aspect-ratio: 1.1;
+}
+
+.contact-page__blob--answers-b {
+  --blob-o: 0.3;
+  right: -6rem;
+  bottom: 6rem;
+  width: min(30rem, 70vw);
+  aspect-ratio: 1.05;
+  border-radius: 40% 60% 55% 45% / 58% 44% 56% 42%;
+}
+
+/* "Good to know" label, in the same handwriting as "follow along" */
+.contact-page__eyebrow {
+  margin: 0 0 0.25rem;
+  color: var(--deep);
+  font: 600 1.625rem/1 var(--font-handwritten);
+}
+
+@media (max-width: 560px) {
+  .contact-page__blob--hero {
+    top: 15rem;
+    right: -2rem;
+    width: min(24rem, 85%);
+  }
+
+  .contact-page__social {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-page__social-links {
+    justify-self: stretch;
+  }
+
+  .contact-page__same-day,
+  .contact-page__square-panel,
+  .contact-page__studio,
+  .contact-page__social {
+    --ox: 8px;
+    --oy: 8px;
+  }
+
+  .contact-page__why {
+    --ox: -8px;
+    --oy: 8px;
+  }
+}

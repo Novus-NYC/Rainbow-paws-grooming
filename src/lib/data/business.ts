@@ -6,6 +6,7 @@
 export type SocialLink = {
   label: string
   href: string
+  handle: string
 }
 
 export type BusinessInfo = {
@@ -55,10 +56,12 @@ export const businessInfo = {
     {
       label: "Instagram",
       href: "https://www.instagram.com/rainbowpawsgrooming/",
+      handle: "@rainbowpawsgrooming",
     },
     {
       label: "TikTok",
       href: "https://www.tiktok.com/@Groomerwynter",
+      handle: "@Groomerwynter",
     },
   ],
 } satisfies BusinessInfo
