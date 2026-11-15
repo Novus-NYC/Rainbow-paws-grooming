@@ -39,6 +39,9 @@ export const groomingSteps = [
 export const pricingNote =
   "Every service is one-on-one. Prices start at the amounts shown and depend on breed, size, and coat condition."
 
+export const servicesPageIntro =
+  "At our Brooklyn dog grooming services, prices increase based on size and coat condition. Every appointment begins with a consultation. Understanding that every dog is unique, my grooming plans are customized based on your dog’s coat condition, health, behavior, and comfort, ensuring the best experience with our Rainbow Signature Grooming."
+
 export const groomingServices = [
   {
     name: "Puppy’s First Groom",
@@ -140,7 +143,8 @@ export const colorStudio = {
   name: "Rainbow Paws Color Studio",
   startingPrice: "$25 per area",
   description:
-    "Express your dog’s unique personality with vibrant, pet-safe color using professional OPAWZ products. Whether you’re seeking a subtle pop of color or a bold creative design, every color application is customized for your dog’s comfort and safety. Got a dark-coated dog? We also offer pet-safe lighteners!",
+    "Express your dog’s unique personality with vibrant, pet-safe color using professional OPAWZ products. Whether you’re seeking a subtle pop of color or a bold creative design, every color application is customized for your dog’s comfort and safety.",
+  lightenerNote: "Got a dark-coated dog? We also offer pet-safe lighteners!",
   bookingNote:
     "Coloring services must be booked alongside a Comfort Bath, Refresh Groom, or our Paws Signature grooming package. It is not a stand-alone service. Full body transformations require a free consultation in advance and are not suitable for puppies under 9 months, or dogs that are behaviorally challenging or receiving a Miracle Makeover.",
 } as const

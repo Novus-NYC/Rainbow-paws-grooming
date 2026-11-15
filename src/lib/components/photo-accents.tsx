@@ -21,6 +21,7 @@ type PhotoAccentProps = {
 /*  minor   hidden on phones    bob    very gentle float               */
 type AccentProps = {
   children: ReactNode
+  className?: string
   size?: number
   tilt?: number
   color?: string
@@ -34,6 +35,7 @@ type AccentProps = {
 
 export function Accent({
   children,
+  className,
   size = 10,
   tilt = 0,
   color,
@@ -62,6 +64,7 @@ export function Accent({
     <span
       className={[
         "accent",
+        className ?? "",
         polar ? "accent--polar" : "",
         minor ? "accent--minor" : "",
         bob ? "accent--bob" : "",
@@ -162,7 +165,20 @@ export function SparkleCluster({ className }: PhotoAccentProps) {
 export function DiamondDoodle({ className }: PhotoAccentProps) {
   return (
     <svg className={className} viewBox="0 0 32 32" strokeWidth="2.4" {...line} aria-hidden="true">
-      <path d="M16.3 3.2 28.6 15.8 15.8 28.8 3.4 16.3Z" fill="currentColor" fillOpacity=".18" />
+      <path d={DIAMOND_PATH} fill="currentColor" fillOpacity=".18" />
+    </svg>
+  )
+}
+
+const DIAMOND_PATH = "M16.3 3.2 28.6 15.8 15.8 28.8 3.4 16.3Z"
+
+/** Three varied diamonds grouped into one small sparkle motif. */
+export function DiamondClusterDoodle({ className }: PhotoAccentProps) {
+  return (
+    <svg className={className} viewBox="0 0 64 56" strokeWidth="2.4" {...line} aria-hidden="true">
+      <path d={DIAMOND_PATH} transform="translate(0 9) rotate(-5 16 16) scale(1.05)" fill="currentColor" fillOpacity=".18" />
+      <path d={DIAMOND_PATH} transform="translate(34 1) rotate(8 16 16) scale(.62)" fill="currentColor" fillOpacity=".18" />
+      <path d={DIAMOND_PATH} transform="translate(42 34) rotate(14 16 16) scale(.36)" fill="currentColor" fillOpacity=".18" />
     </svg>
   )
 }
