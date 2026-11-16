@@ -134,6 +134,7 @@ type PhotoCollageProps = {
   sizes: string
   label?: string
   className?: string
+  priority?: boolean
   /** <Accent> doodles, placed in cqw (see photo-accents.tsx) */
   children?: ReactNode
 }
@@ -146,6 +147,7 @@ export function PhotoCollage({
   sizes,
   label,
   className,
+  priority = false,
   children,
 }: PhotoCollageProps) {
   return (
@@ -204,7 +206,7 @@ export function PhotoCollage({
                 alt={item.alt}
                 fill
                 sizes={sizes}
-                priority={i < 2}
+                priority={priority && i < 2}
                 style={{ objectPosition: item.focus ?? "50% 35%" }}
               />
             </div>

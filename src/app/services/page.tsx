@@ -124,6 +124,7 @@ export default function ServicesPage() {
             maxWidth={500}
             sizes="(max-width: 700px) 42vw, 240px"
             label="Rainbow Paws grooming photos"
+            priority
           >
             <Accent className="services-page__accent services-page__accent--hero-dryer" size={20} tilt={-10}>
               <GroomingIllustration type="dryer" size={96} decorative />
