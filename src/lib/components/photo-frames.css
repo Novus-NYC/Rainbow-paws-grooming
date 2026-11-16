@@ -12,11 +12,9 @@
 }
 
 .photo-frame--scallop,
-.photo-frame--circle,
 .photo-frame--flower { aspect-ratio: 1; }
 .photo-frame--blob   { aspect-ratio: 1.06; }
 .photo-frame--cloud  { aspect-ratio: 1.2; }
-.photo-frame--arch   { aspect-ratio: 4 / 5; }
 
 /* drop shadow follows the clipped outline, doodles are not inside it */
 .photo-frame__shape {
@@ -53,9 +51,6 @@
 .photo-frame--blob    { --clip: url(#photo-shape-blob); }
 .photo-frame--cloud   { --clip: url(#photo-shape-cloud); }
 .photo-frame--flower  { --clip: url(#photo-shape-flower); }
-
-.photo-frame--circle .photo-frame__layer { border-radius: 50%; }
-.photo-frame--arch .photo-frame__layer { border-radius: 999px 999px 18px 18px; }
 
 .photo-frame__backdrop {
   position: absolute;

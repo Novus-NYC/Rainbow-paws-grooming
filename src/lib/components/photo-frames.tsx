@@ -2,7 +2,7 @@ import Image from "next/image"
 import type { CSSProperties, ReactNode } from "react"
 import { OrganicShape } from "./photo-accents"
 
-export type PhotoShape = "scallop" | "blob" | "cloud" | "flower" | "arch" | "circle"
+export type PhotoShape = "scallop" | "blob" | "cloud" | "flower"
 
 /* Outlines are generated once, in 0..1 box units, so they stretch to any
    frame size. */
