@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description: `Book an appointment or contact ${businessInfo.name}.`,
 }
 
-const contactFaqs = faqs.filter((item) => item.question !== "Why choose Rainbow Paws?")
+const contactFaqs = faqs.filter((item) => item.placement.contact === "list")
 
 const contactHighlights = [
   "16+ Years of Experience",

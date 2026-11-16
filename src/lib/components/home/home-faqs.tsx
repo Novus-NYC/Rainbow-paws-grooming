@@ -2,14 +2,8 @@ import Link from "next/link"
 import { faqs } from "@/lib/data/support"
 import { primaryActions } from "@/lib/data/business"
 
-const homepageQuestions = new Set([
-  "How much does it cost?",
-  "Are evening appointments available?",
-  "Any breed or weight restrictions?",
-])
-
-const homepageFaqs = faqs.filter((item) => homepageQuestions.has(item.question))
-const introduction = faqs.find((item) => item.question === "Why choose Rainbow Paws?")
+const homepageFaqs = faqs.filter((item) => item.placement.home === "list")
+const introduction = faqs.find((item) => item.placement.home === "intro")
 
 export function HomeFaqs() {
   return (
