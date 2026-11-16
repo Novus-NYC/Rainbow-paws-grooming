@@ -1,8 +1,8 @@
-export type GalleryCrop = "left" | "right"
+type GalleryCrop = "left" | "right"
 
-export type GalleryStripCrop = "right-top" | "right-bottom"
+type GalleryStripCrop = "right-top" | "right-bottom"
 
-export type GalleryStripPanel = {
+type GalleryStripPanel = {
   src?: string
   crop: GalleryStripCrop
   alt: string
@@ -21,7 +21,7 @@ export type GalleryPhoto = {
   caption?: "before" | "after"
 }
 
-export type GalleryEntry = {
+type GalleryEntry = {
   id: string
   photos: GalleryPhoto[]
 }
