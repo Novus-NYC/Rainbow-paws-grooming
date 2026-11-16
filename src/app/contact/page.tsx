@@ -7,8 +7,6 @@ import { HomeReviews } from "@/lib/components/home/home-reviews"
 import {
   Accent,
   BoneDoodle,
-  DiamondDoodle,
-  HeartDoodle,
   PawPrint,
   PawTrail,
   SparkleCluster,
