@@ -131,7 +131,7 @@ export default function ContactPage() {
         <div className="contact-page__booking-inner">
           <div className="contact-page__square-panel">
             <div className="contact-page__deco" aria-hidden="true">
-              <Accent pos={{ left: "-4cqw", top: "2cqw" }} size={12} tilt={-12}>
+              <Accent pos={{ left: "-4cqw", top: "-2cqw" }} size={12} tilt={-12}>
                 <GroomingIllustration type="dryer" size={96} decorative />
               </Accent>
               <Accent pos={{ left: "6cqw", top: "-2cqw" }} size={8} color="var(--r3)">

@@ -485,8 +485,12 @@ html:has(.gallery-page) {
     flex-wrap: nowrap;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-    scrollbar-width: thin;
+    scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
+  }
+
+  .gallery-page__category-nav::-webkit-scrollbar {
+    display: none;
   }
 
   .gallery-category {
@@ -523,7 +527,7 @@ html:has(.gallery-page) {
 
   .gallery-page__content {
     padding-top: 4rem;
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
     border-radius: 2.5rem 2.5rem 0 0;
   }
 

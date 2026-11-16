@@ -486,7 +486,7 @@
   }
 
   .services-page__packages {
-    padding-block: 64px;
+    padding-block: 64px 112px;
   }
 
   .services-page__cards {

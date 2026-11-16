@@ -104,7 +104,9 @@
 .contact-page__square-panel {
   position: relative;
   isolation: isolate;
+  width: 100%;
   min-width: 0;
+  max-width: 100%;
   padding: 2.125rem;
   border-radius: 1.75rem;
   background: var(--deep);
@@ -162,7 +164,12 @@
 }
 
 .contact-page__square-surface {
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 100%;
   min-width: 0;
+  max-width: 100%;
   min-height: 31.5rem;
   border: 3px dashed var(--deep);
   border-radius: 0.75rem;
@@ -174,6 +181,9 @@
 .contact-page__square-frame {
   display: block;
   width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  margin-inline: auto;
   height: 31.5rem;
   border: 0;
   background: #fff;
@@ -569,7 +579,7 @@
 
 @media (max-width: 700px) {
   .contact-page__square-panel {
-    padding: 1.25rem;
+    padding: 1.75rem 0rem 0.5rem 1.25rem;
   }
 
   .contact-page__square-surface,
@@ -607,7 +617,7 @@
   }
 
   .contact-page__square-panel {
-    padding: 0.875rem;
+    padding: 1.75rem 0rem 0.5rem 1.25rem;
     border-radius: 1.25rem;
   }
 
