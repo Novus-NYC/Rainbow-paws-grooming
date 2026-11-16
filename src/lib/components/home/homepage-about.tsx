@@ -34,7 +34,7 @@ const DOODLES: DoodleDecoration[] = [
     kind: "burst" as const,
     color: "#f7c948",
     className: "rp-home-about__doodle--burst",
-    style: { left: "10%", top: "-2%", width: "11%", transform: "rotate(-80deg)" },
+    style: { left: "10%", top: "-2%", width: "11%", transform: "rotate(-50deg)" },
   },
   {
     kind: "bone" as const,
