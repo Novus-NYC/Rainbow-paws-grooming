@@ -400,12 +400,6 @@
   width: clamp(24px, 7cqw, 34px);
 }
 
-.services-page__accent--color-diamonds {
-  top: 44cqw;
-  left: 46cqw;
-  width: clamp(36px, 11cqw, 56px);
-}
-
 /* ---------- package cards: same height open or closed ---------- */
 /* Cards stretch to match their row. The description opens over the card
    instead of pushing it taller, so nothing grows and no neighbour moves.
@@ -577,11 +571,6 @@
     width: clamp(20px, 7cqw, 28px);
   }
 
-  .services-page__accent--color-diamonds {
-    top: 45cqw;
-    left: 47cqw;
-    width: clamp(28px, 8cqw, 36px);
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
