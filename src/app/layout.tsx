@@ -2,6 +2,8 @@ import "./globals.css"
 import "@/lib/components/chrome/site-chrome.css"
 import Navbar from "@/lib/components/chrome/navbar"
 import Footer from "@/lib/components/chrome/footer"
+import { LoadingScreen } from "@/lib/components/chrome/loading-screen"
+import "@/lib/components/chrome/loading-screen.css"
 import { businessInfo } from "@/lib/data/business"
 import { Caveat, Figtree, Fraunces } from "next/font/google"
 import type { Metadata } from "next"
@@ -52,6 +54,7 @@ export default function RootLayout({
         <a className="skip-link" href="#main-content">
           Skip to main content
         </a>
+        <LoadingScreen />
         <Navbar />
         <main id="main-content" className="flex-1" tabIndex={-1}>
           {children}
