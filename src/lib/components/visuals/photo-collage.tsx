@@ -135,7 +135,7 @@ type PhotoCollageProps = {
   label?: string
   className?: string
   priority?: boolean
-  /** <Accent> doodles, placed in cqw (see photo-accents.tsx) */
+  /** <Accent> doodles, placed in cqw (see visuals/photo-accents.tsx) */
   children?: ReactNode
 }
 

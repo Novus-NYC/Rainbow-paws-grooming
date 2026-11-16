@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useLayoutEffect, useRef, useState } from "react"
-import { PawPrint } from "@/lib/components/photo-accents"
+import { PawPrint } from "@/lib/components/visuals/photo-accents"
 import { primaryActions } from "@/lib/data/business"
 import { reviewSummary, reviews } from "@/lib/data/support"
 

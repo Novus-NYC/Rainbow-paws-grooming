@@ -1,7 +1,7 @@
 ﻿import Image from "next/image"
 import Link from "next/link"
 import type { CSSProperties } from "react"
-import { BoneDoodle, BurstDoodle, PawPrint } from "@/lib/components/photo-accents"
+import { BoneDoodle, BurstDoodle, PawPrint } from "@/lib/components/visuals/photo-accents"
 
 type HomepageAboutProps = {
   imageSrc: string;

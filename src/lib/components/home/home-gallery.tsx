@@ -7,7 +7,7 @@ import {
   BurstDoodle,
   PawPrint,
   SparkleDoodle,
-} from "@/lib/components/photo-accents"
+} from "@/lib/components/visuals/photo-accents"
 import { primaryActions } from "@/lib/data/business"
 import { homepageGalleryItems } from "@/lib/data/gallery"
 

@@ -1,14 +1,14 @@
 import "./about.css"
 import "@/lib/components/home/home-sections.css"
-import "@/lib/components/visit-steps.css"
-import "@/lib/components/reviews-section.css"
-import "@/lib/components/photo-frames.css"
+import "@/lib/components/sections/visit-steps.css"
+import "@/lib/components/sections/reviews-section.css"
+import "@/lib/components/visuals/photo-frames.css"
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
-import { GroomingIllustration } from "@/lib/components/grooming-illustrations"
-import { ReviewsSection } from "@/lib/components/reviews-section"
-import { VisitSteps } from "@/lib/components/visit-steps"
+import { GroomingIllustration } from "@/lib/components/visuals/grooming-illustrations"
+import { ReviewsSection } from "@/lib/components/sections/reviews-section"
+import { VisitSteps } from "@/lib/components/sections/visit-steps"
 import { primaryActions } from "@/lib/data/business"
 import {
   Accent,
@@ -17,8 +17,8 @@ import {
   HeartDoodle,
   PawPrint,
   SparkleDoodle,
-} from "@/lib/components/photo-accents"
-import { PhotoFrame, PhotoShapeDefs } from "@/lib/components/photo-frames"
+} from "@/lib/components/visuals/photo-accents"
+import { PhotoFrame, PhotoShapeDefs } from "@/lib/components/visuals/photo-frames"
 
 export const metadata: Metadata = {
   title: "About",

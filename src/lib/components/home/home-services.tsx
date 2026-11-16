@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { PawPrint } from "@/lib/components/photo-accents"
+import { PawPrint } from "@/lib/components/visuals/photo-accents"
 import { primaryActions } from "@/lib/data/business"
 import { groomingServices, pricingNote } from "@/lib/data/services"
 

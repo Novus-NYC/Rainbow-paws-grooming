@@ -1,5 +1,5 @@
 import { trustSignals } from "@/lib/data/business"
-import { PawPrint } from "@/lib/components/photo-accents"
+import { PawPrint } from "@/lib/components/visuals/photo-accents"
 
 export function TrustBanner() {
   return (

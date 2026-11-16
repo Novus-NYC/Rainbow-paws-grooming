@@ -1,7 +1,7 @@
 import "./services.css"
-import "@/lib/components/reviews-section.css"
-import "@/lib/components/photo-frames.css"
-import "@/lib/components/photo-collage.css"
+import "@/lib/components/sections/reviews-section.css"
+import "@/lib/components/visuals/photo-frames.css"
+import "@/lib/components/visuals/photo-collage.css"
 import Link from "next/link"
 import type { Metadata } from "next"
 import {
@@ -12,11 +12,11 @@ import {
   SparkleCluster,
   SquiggleDoodle,
   SwishDoodle,
-} from "@/lib/components/photo-accents"
-import { GroomingIllustration } from "@/lib/components/grooming-illustrations"
-import { CollageDefs, PhotoCollage } from "@/lib/components/photo-collage"
-import type { CollageBackdrop, CollageItem } from "@/lib/components/photo-collage"
-import { ReviewsSection } from "@/lib/components/reviews-section"
+} from "@/lib/components/visuals/photo-accents"
+import { GroomingIllustration } from "@/lib/components/visuals/grooming-illustrations"
+import { CollageDefs, PhotoCollage } from "@/lib/components/visuals/photo-collage"
+import type { CollageBackdrop, CollageItem } from "@/lib/components/visuals/photo-collage"
+import { ReviewsSection } from "@/lib/components/sections/reviews-section"
 import { businessInfo, primaryActions } from "@/lib/data/business"
 import {
   aLaCarteServices,

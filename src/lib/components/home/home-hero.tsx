@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { businessInfo, primaryActions } from "@/lib/data/business"
-import { OrganicShape } from "@/lib/components/photo-accents"
+import { OrganicShape } from "@/lib/components/visuals/photo-accents"
 
 export function HomeHero() {
   return (

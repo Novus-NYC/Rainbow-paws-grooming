@@ -1,17 +1,17 @@
 import "./contact.css"
-import "@/lib/components/photo-frames.css"
-import "@/lib/components/reviews-section.css"
+import "@/lib/components/visuals/photo-frames.css"
+import "@/lib/components/sections/reviews-section.css"
 import Link from "next/link"
 import type { Metadata } from "next"
-import { ReviewsSection } from "@/lib/components/reviews-section"
+import { ReviewsSection } from "@/lib/components/sections/reviews-section"
 import {
   Accent,
   BoneDoodle,
   PawPrint,
   PawTrail,
   SparkleCluster,
-} from "@/lib/components/photo-accents"
-import { GroomingIllustration } from "@/lib/components/grooming-illustrations"
+} from "@/lib/components/visuals/photo-accents"
+import { GroomingIllustration } from "@/lib/components/visuals/grooming-illustrations"
 import { businessInfo } from "@/lib/data/business"
 import { faqs } from "@/lib/data/support"
 
