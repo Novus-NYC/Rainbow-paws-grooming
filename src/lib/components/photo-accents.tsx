@@ -172,25 +172,6 @@ export function DiamondDoodle({ className }: PhotoAccentProps) {
 
 const DIAMOND_PATH = "M16.3 3.2 28.6 15.8 15.8 28.8 3.4 16.3Z"
 
-/** Three varied diamonds grouped into one small sparkle motif. */
-export function DiamondClusterDoodle({ className }: PhotoAccentProps) {
-  return (
-    <svg className={className} viewBox="0 0 64 56" strokeWidth="2.4" {...line} aria-hidden="true">
-      <path d={DIAMOND_PATH} transform="translate(0 9) rotate(-5 16 16) scale(1.05)" fill="currentColor" fillOpacity=".18" />
-      <path d={DIAMOND_PATH} transform="translate(34 1) rotate(8 16 16) scale(.62)" fill="currentColor" fillOpacity=".18" />
-      <path d={DIAMOND_PATH} transform="translate(42 34) rotate(14 16 16) scale(.36)" fill="currentColor" fillOpacity=".18" />
-    </svg>
-  )
-}
-
-export function StarDoodle({ className }: PhotoAccentProps) {
-  return (
-    <svg className={className} viewBox="0 0 32 32" strokeWidth="2.2" {...line} aria-hidden="true">
-      <path d="m16 3.6 3.6 8 8.7.9-6.5 5.9 1.9 8.6L16 22.4l-7.7 4.5 1.9-8.6-6.5-5.9 8.7-.9Z" fill="currentColor" fillOpacity=".18" />
-    </svg>
-  )
-}
-
 /** Three short dashes fanning upward, so it reads as "bursting out" when
  *  placed on the outside of a frame with <Accent a=… />. */
 export function BurstDoodle({ className }: PhotoAccentProps) {
@@ -224,31 +205,11 @@ export function SquiggleDoodle({ className }: PhotoAccentProps) {
   )
 }
 
-export function CurlArrowDoodle({ className }: PhotoAccentProps) {
-  return (
-    <svg className={className} viewBox="0 0 48 48" strokeWidth="2.6" {...line} aria-hidden="true">
-      <path d="M7 5C5 24 14 40 35 38M27 29l9 9-12 8" />
-    </svg>
-  )
-}
-
 /** Three speed lines, nice behind a running or wagging dog. */
 export function SwishDoodle({ className }: PhotoAccentProps) {
   return (
     <svg className={className} viewBox="0 0 48 48" strokeWidth="3.2" {...line} aria-hidden="true">
       <path d="M3 12h30M9 24h36M3 36h24" />
-    </svg>
-  )
-}
-
-/** A short trail of dots that shrink as they go. */
-export function DotTrailDoodle({ className }: PhotoAccentProps) {
-  return (
-    <svg className={className} viewBox="0 0 48 48" fill="currentColor" aria-hidden="true">
-      <circle cx="8" cy="34" r="3" />
-      <circle cx="20" cy="26" r="2.5" />
-      <circle cx="31" cy="19" r="2" />
-      <circle cx="41" cy="14" r="1.5" />
     </svg>
   )
 }

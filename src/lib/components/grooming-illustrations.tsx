@@ -5,8 +5,7 @@ export type GroomingArt =
   | "comb"
   | "dryer"
   | "scissors"
-  | "shampoo"
-  | "paw";
+  | "shampoo";
 
 type Props = {
   type: GroomingArt;
@@ -496,36 +495,5 @@ export function GroomingIllustration({
     );
   }
 
-  return (
-    <Shell title="Decorative dog paw print" size={size} className={className} decorative={decorative}>
-      {() => (
-        <g transform="rotate(-12 100 100)">
-          <StickerShape
-            d="M48 106 C48 89 67 78 82 86 C91 91 94 103 100 103 C106 103 110 91 119 86 C134 78 153 89 153 106 C153 130 131 145 100 145 C69 145 48 130 48 106 Z"
-            fill="#36b8b7"
-          />
-          <StickerShape
-            d="M44 70 C32 65 29 49 35 37 C41 25 53 24 59 36 C66 49 61 68 53 72 Z"
-            fill="#a9e8df"
-            strokeWidth={5}
-          />
-          <StickerShape
-            d="M77 53 C66 48 65 29 73 17 C81 5 94 11 98 24 C102 39 91 55 82 56 Z"
-            fill="#a9e8df"
-            strokeWidth={5}
-          />
-          <StickerShape
-            d="M112 53 C103 49 100 31 106 19 C112 6 127 8 132 21 C138 35 127 54 117 56 Z"
-            fill="#a9e8df"
-            strokeWidth={5}
-          />
-          <StickerShape
-            d="M147 72 C137 68 132 51 138 39 C144 26 157 27 164 39 C171 51 162 70 153 74 Z"
-            fill="#a9e8df"
-            strokeWidth={5}
-          />
-        </g>
-      )}
-    </Shell>
-  );
+  return null;
 }
