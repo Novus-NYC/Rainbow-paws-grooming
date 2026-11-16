@@ -1,5 +1,5 @@
 import "./services.css"
-import "@/lib/components/home/home-reviews.css"
+import "@/lib/components/reviews-section.css"
 import "@/lib/components/photo-frames.css"
 import "@/lib/components/photo-collage.css"
 import Link from "next/link"
@@ -16,7 +16,7 @@ import {
 import { GroomingIllustration } from "@/lib/components/grooming-illustrations"
 import { CollageDefs, PhotoCollage } from "@/lib/components/photo-collage"
 import type { CollageBackdrop, CollageItem } from "@/lib/components/photo-collage"
-import { HomeReviews } from "@/lib/components/home/home-reviews"
+import { ReviewsSection } from "@/lib/components/reviews-section"
 import { businessInfo, primaryActions } from "@/lib/data/business"
 import {
   aLaCarteServices,
@@ -251,7 +251,7 @@ export default function ServicesPage() {
           </div>
       </section>
 
-      <HomeReviews />
+      <ReviewsSection />
     </div>
   )
 }

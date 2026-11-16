@@ -1,9 +1,9 @@
 import "./contact.css"
 import "@/lib/components/photo-frames.css"
-import "@/lib/components/home/home-reviews.css"
+import "@/lib/components/reviews-section.css"
 import Link from "next/link"
 import type { Metadata } from "next"
-import { HomeReviews } from "@/lib/components/home/home-reviews"
+import { ReviewsSection } from "@/lib/components/reviews-section"
 import {
   Accent,
   BoneDoodle,
@@ -295,7 +295,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <HomeReviews />
+      <ReviewsSection />
     </div>
   )
 }

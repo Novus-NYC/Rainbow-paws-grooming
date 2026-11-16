@@ -1,6 +1,6 @@
 import "./gallery.css"
 import "@/lib/components/photo-frames.css"
-import "@/lib/components/home/home-reviews.css"
+import "@/lib/components/reviews-section.css"
 import Image from "next/image"
 import Link from "next/link"
 import type { CSSProperties } from "react"
@@ -8,7 +8,7 @@ import type { Metadata } from "next"
 import { PhotoFrame, PhotoShapeDefs } from "@/lib/components/photo-frames"
 import { Accent, HeartDoodle, PawPrint, SparkleDoodle } from "@/lib/components/photo-accents"
 import { GroomingIllustration } from "@/lib/components/grooming-illustrations"
-import { HomeReviews } from "@/lib/components/home/home-reviews"
+import { ReviewsSection } from "@/lib/components/reviews-section"
 import GalleryBackToTop from "@/lib/components/gallery-back-to-top"
 import GalleryRevealObserver from "./gallery-reveal"
 import { businessInfo, primaryActions } from "@/lib/data/business"
@@ -267,7 +267,7 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      <HomeReviews />
+      <ReviewsSection />
       <GalleryBackToTop />
       <GalleryRevealObserver />
     </div>

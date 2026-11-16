@@ -23,7 +23,7 @@ const reviewGroups = [0, 1, 2]
 const progressPaws = Array.from({ length: 14 }, (_, index) => index)
 const logicalSlideCount = reviews.length + 2
 
-export function HomeReviews() {
+export function ReviewsSection() {
   const scrollerRef = useRef<HTMLDivElement>(null)
   const groupsRef = useRef<Array<HTMLUListElement | null>>([])
   const loopRef = useRef({ start: 0, stride: 0 })

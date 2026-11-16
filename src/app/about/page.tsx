@@ -1,14 +1,14 @@
 import "./about.css"
 import "@/lib/components/home/home-sections.css"
-import "@/lib/components/home/visit-steps.css"
-import "@/lib/components/home/home-reviews.css"
+import "@/lib/components/visit-steps.css"
+import "@/lib/components/reviews-section.css"
 import "@/lib/components/photo-frames.css"
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
 import { GroomingIllustration } from "@/lib/components/grooming-illustrations"
-import { HomeReviews } from "@/lib/components/home/home-reviews"
-import { VisitSteps } from "@/lib/components/home/visit-steps"
+import { ReviewsSection } from "@/lib/components/reviews-section"
+import { VisitSteps } from "@/lib/components/visit-steps"
 import { primaryActions } from "@/lib/data/business"
 import {
   Accent,
@@ -270,7 +270,7 @@ export default function AboutPage() {
       </section>
 
       <VisitSteps />
-      <HomeReviews />
+      <ReviewsSection />
     </div>
   )
 }

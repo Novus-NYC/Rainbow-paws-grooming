@@ -1,17 +1,17 @@
 import "@/lib/components/home/home-sections.css"
 import "@/lib/components/home/homepage-about.css"
-import "@/lib/components/home/visit-steps.css"
+import "@/lib/components/visit-steps.css"
 import "@/lib/components/home/home-services.css"
 import "@/lib/components/home/home-gallery.css"
-import "@/lib/components/home/home-reviews.css"
+import "@/lib/components/reviews-section.css"
 import "@/lib/components/home/home-faqs.css"
 import { HomeHero } from "@/lib/components/home/home-hero"
 import { TrustBanner } from "@/lib/components/home/trust-banner"
 import HomepageAbout from "@/lib/components/home/homepage-about"
-import { VisitSteps } from "@/lib/components/home/visit-steps"
+import { VisitSteps } from "@/lib/components/visit-steps"
 import { HomeServices } from "@/lib/components/home/home-services"
 import { HomeGallery } from "@/lib/components/home/home-gallery"
-import { HomeReviews } from "@/lib/components/home/home-reviews"
+import { ReviewsSection } from "@/lib/components/reviews-section"
 import { HomeFaqs } from "@/lib/components/home/home-faqs"
 import { primaryActions } from "@/lib/data/business"
 
@@ -30,7 +30,7 @@ export default function HomePage() {
       <VisitSteps />
       <HomeServices />
       <HomeGallery />
-      <HomeReviews />
+      <ReviewsSection />
       <HomeFaqs />
     </>
   )
