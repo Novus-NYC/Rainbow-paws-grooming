@@ -88,7 +88,7 @@
   overflow: visible;
 }
 
-/* origin = centre of the arch/circle, `a` clockwise from 12 o'clock,
+/* origin = centre of the frame, `a` clockwise from 12 o'clock,
    `g` = gap from the edge. Local "up" always points away from the frame. */
 .accent--polar {
   top: 50cqw;

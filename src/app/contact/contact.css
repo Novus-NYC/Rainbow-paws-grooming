@@ -750,8 +750,8 @@
   height: max(var(--s), 2.25rem);
 }
 
-/* Social card: buttons on the left, text on the right. DOM order stays
-   text first so phones and screen readers read the heading first. */
+/* Social card: text appears on the left and links on the right on wider screens.
+   Keeping text first in the DOM preserves the reading order on phones too. */
 .contact-page__social {
   grid-template-columns: minmax(0, 1fr) auto;
 }

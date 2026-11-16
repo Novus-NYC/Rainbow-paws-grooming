@@ -12,7 +12,7 @@ type PhotoAccentProps = {
 /* The parent must have `container-type: inline-size`                  */
 /* (PhotoFrame and the about hero stack already do).                   */
 /*                                                                     */
-/*  a + g   polar placement around a round/arch frame. `a` is degrees  */
+/*  a + g   polar placement around a centered photo frame. `a` is degrees */
 /*          clockwise from 12 o'clock, `g` is the gap from the edge in */
 /*          cqw. Bursts then always point AWAY from the frame, and     */
 /*          paws with tilt={90} walk along the curve.                  */
