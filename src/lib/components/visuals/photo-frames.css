@@ -1,0 +1,113 @@
+/* Photo frames + doodle accents. Shared across the site. */
+
+/* ---------- frame ---------- */
+.photo-frame {
+  --accent: var(--aqua);
+  --ox: 12px;
+  --oy: 12px;
+  position: relative;
+  isolation: isolate;
+  container-type: inline-size;
+  width: 100%;
+}
+
+.photo-frame--scallop,
+.photo-frame--flower { aspect-ratio: 1; }
+.photo-frame--blob   { aspect-ratio: 1.06; }
+.photo-frame--cloud  { aspect-ratio: 1.2; }
+
+/* drop shadow follows the clipped outline, doodles are not inside it */
+.photo-frame__shape {
+  position: absolute;
+  inset: 0;
+  filter: drop-shadow(0 12px 16px rgb(15 76 79 / 0.16));
+}
+
+.photo-frame__layer {
+  position: absolute;
+  inset: 0;
+  clip-path: var(--clip, none);
+}
+
+.photo-frame__offset {
+  background: var(--accent);
+  transform: translate(var(--ox), var(--oy)) scale(1.045);
+}
+
+.photo-frame__edge {
+  background: #fff;
+  transform: scale(1.045);
+}
+
+.photo-frame__photo {
+  overflow: hidden;
+}
+
+.photo-frame__photo img {
+  object-fit: cover;
+}
+
+.photo-frame--scallop { --clip: url(#photo-shape-scallop); }
+.photo-frame--blob    { --clip: url(#photo-shape-blob); }
+.photo-frame--cloud   { --clip: url(#photo-shape-cloud); }
+.photo-frame--flower  { --clip: url(#photo-shape-flower); }
+
+.photo-frame__backdrop {
+  position: absolute;
+  z-index: -1;
+  top: -12%;
+  left: -14%;
+  width: 78%;
+  opacity: 0.5;
+  rotate: -14deg;
+  pointer-events: none;
+}
+
+.photo-frame__backdrop svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ---------- accents ---------- */
+.accent {
+  position: absolute;
+  z-index: 3;
+  width: var(--s);
+  height: var(--s);
+  color: var(--aqua);
+  rotate: var(--t, 0deg);
+  pointer-events: none;
+}
+
+.accent > svg,
+.accent > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+/* origin = centre of the frame, `a` clockwise from 12 o'clock,
+   `g` = gap from the edge. Local "up" always points away from the frame. */
+.accent--polar {
+  top: 50cqw;
+  left: 50%;
+  margin: calc(var(--s) / -2) 0 0 calc(var(--s) / -2);
+  rotate: none;
+  transform: rotate(var(--a)) translateY(calc(-50cqw - var(--g))) rotate(var(--t, 0deg));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .accent--bob {
+    animation: accent-bob 5s ease-in-out infinite alternate;
+  }
+
+  @keyframes accent-bob {
+    to { translate: 0 -4px; }
+  }
+}
+
+@media (max-width: 560px) {
+  .accent--minor { display: none; }
+}

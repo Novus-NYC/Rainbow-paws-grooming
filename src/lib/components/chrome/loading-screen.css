@@ -1,0 +1,84 @@
+.loading-screen {
+  position: fixed;
+  z-index: 200;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 0.875rem;
+  overflow: hidden;
+  background: var(--deep);
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.7s ease, visibility 0s linear 0s;
+}
+
+.loading-screen--fading {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.7s ease, visibility 0s linear 0.7s;
+}
+
+.loading-screen__rainbow {
+  position: relative;
+  width: min(230px, 78vw);
+  aspect-ratio: 23 / 15;
+}
+
+.loading-screen__arch {
+  position: absolute;
+  bottom: 22.67%;
+  left: 50%;
+  width: calc(91.3% - var(--arch-inset));
+  aspect-ratio: 2 / 1;
+  border: 9px solid var(--arch-color);
+  border-bottom: 0;
+  border-radius: 999px 999px 0 0;
+  transform: translateX(-50%) scale(0);
+  transform-origin: 50% 100%;
+  animation: loading-arch-appear 0.6s var(--arch-delay) cubic-bezier(0.3, 1.5, 0.5, 1) forwards;
+}
+
+.loading-screen__logo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: auto;
+  height: clamp(3.5rem, 25vw, 4.875rem);
+  object-fit: contain;
+  transform: translateX(-50%);
+  animation: loading-logo-bounce 1.2s 0.2s ease-in-out infinite alternate;
+}
+
+.loading-screen__name {
+  margin: 0;
+  font: 600 clamp(1.35rem, 5vw, 1.625rem) / 1.2 var(--font-display);
+  opacity: 0;
+  animation: loading-name-appear 0.6s 1s ease forwards;
+}
+
+@keyframes loading-arch-appear {
+  to {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+@keyframes loading-logo-bounce {
+  to {
+    transform: translate(-50%, -6px);
+  }
+}
+
+@keyframes loading-name-appear {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loading-screen {
+    display: none;
+    animation: none;
+    transition: none;
+  }
+}

@@ -1,23 +1,37 @@
+import "@/lib/components/home/home-sections.css"
+import "@/lib/components/home/homepage-about.css"
+import "@/lib/components/sections/visit-steps.css"
+import "@/lib/components/home/home-services.css"
+import "@/lib/components/home/home-gallery.css"
+import "@/lib/components/sections/reviews-section.css"
+import "@/lib/components/home/home-faqs.css"
+import { HomeHero } from "@/lib/components/home/home-hero"
+import { TrustBanner } from "@/lib/components/home/trust-banner"
+import HomepageAbout from "@/lib/components/home/homepage-about"
+import { VisitSteps } from "@/lib/components/sections/visit-steps"
+import { HomeServices } from "@/lib/components/home/home-services"
+import { HomeGallery } from "@/lib/components/home/home-gallery"
+import { ReviewsSection } from "@/lib/components/sections/reviews-section"
+import { HomeFaqs } from "@/lib/components/home/home-faqs"
+import { primaryActions } from "@/lib/data/business"
+
 export default function HomePage() {
   return (
-    <div className="space-y-8">
-      <h1 className="text-4xl font-bold">
-        Welcome to Business Name
-      </h1>
-
-      <p className="text-lg text-gray-600">
-        Replace this section with a strong value proposition.
-      </p>
-
-      <div className="flex gap-4">
-        <button className="px-6 py-3 bg-black text-white rounded-md">
-          Primary Action
-        </button>
-
-        <button className="px-6 py-3 border rounded-md">
-          Secondary Action
-        </button>
-      </div>
-    </div>
+    <>
+      <HomeHero />
+      <TrustBanner />
+      <HomepageAbout
+        imageSrc="/wynter/wynter-3.webp"
+        imageAlt="Wynter gently offering a treat to a tan dog in a pink harness."
+        imagePosition="50% 50%"
+        meetHref="/about"
+        bookHref={primaryActions.booking.href}
+      />
+      <VisitSteps />
+      <HomeServices />
+      <HomeGallery />
+      <ReviewsSection />
+      <HomeFaqs />
+    </>
   )
 }

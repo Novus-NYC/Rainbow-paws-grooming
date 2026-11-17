@@ -1,0 +1,70 @@
+/* One composed group of photos: shared backdrop, overlapping organic frames,
+   doodles on top. Everything is sized in cqw so it scales as a unit. */
+.photo-collage {
+  position: relative;
+  container-type: inline-size;
+  width: 100%;
+  max-width: var(--max, 640px);
+  aspect-ratio: var(--ratio, 1);
+  margin-inline: auto;
+}
+
+.photo-collage__backdrop {
+  position: absolute;
+  z-index: 0;
+  top: calc(var(--y) * 1cqw);
+  left: calc(var(--x) * 1cqw);
+  width: calc(var(--w) * 1cqw);
+  height: calc(var(--h) * 1cqw);
+  color: var(--c);
+  opacity: var(--o);
+  rotate: var(--r);
+  pointer-events: none;
+}
+
+.photo-collage__backdrop svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.photo-collage__item {
+  position: absolute;
+  z-index: var(--z);
+  top: calc(var(--y) * 1cqw);
+  left: calc(var(--x) * 1cqw);
+  width: calc(var(--w) * 1cqw);
+  aspect-ratio: var(--ar);
+  rotate: var(--r);
+}
+
+.photo-collage__shape {
+  position: absolute;
+  inset: 0;
+  filter: drop-shadow(0 1.6cqw 2cqw rgb(15 76 79 / 0.16));
+}
+
+.photo-collage__layer {
+  position: absolute;
+  inset: 0;
+  clip-path: var(--clip);
+}
+
+.photo-collage__offset {
+  background: var(--accent);
+  opacity: 0.6;
+  transform: translate(1.3cqw, 1.3cqw) scale(1.04);
+}
+
+.photo-collage__edge {
+  background: #fff;
+  transform: scale(1.04);
+}
+
+.photo-collage__photo {
+  overflow: hidden;
+}
+
+.photo-collage__photo img {
+  object-fit: cover;
+}

@@ -1,12 +1,120 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-  padding: 0;
-  margin: 0;
+:root {
+  color-scheme: light;
+  --ink: #12302f;
+  --deep: #0f4c4f;
+  --aqua: #00ced1;
+  --tint: #d9f4f3;
+  --mist: #f2f8f6;
+  --peach: #f5c3ab;
+  --r1: #e8594f;
+  --r2: #f59a3d;
+  --r3: #f7c948;
+  --r4: #5dbb8a;
+  --r5: #14bfc4;
+  --r6: #3f6fd8;
+  --r7: #8b6bd9;
+  --surface: #ffffff;
+  --border: #cfe0db;
+  --on-dark-muted: #d3e6e1;
+
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-body: var(--font-figtree), system-ui, sans-serif;
+  --font-handwritten: var(--font-caveat), cursive;
+
+  --text-small: 0.875rem;
+  --text-body: 1.0625rem;
+  --text-lead: 1.1875rem;
+  --text-h1: clamp(2.625rem, 5.4vw, 4.75rem);
+  --text-h2: clamp(2rem, 4.2vw, 3.25rem);
+  --text-h3: clamp(1.5625rem, 2.8vw, 2.125rem);
+
+  --content-width: 70rem;
+  --page-gutter: 1.375rem;
+  --section-space: 6.5rem;
+  --nav-height: 4.875rem;
+  --radius-control: 0.5rem;
+  --photo-accent-soft: var(--tint);
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--mist);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-variation-settings: "SOFT" 100;
+  letter-spacing: -0.01em;
+  line-height: 1.08;
+}
+
+h1 {
+  font-size: var(--text-h1);
+}
+
+h2 {
+  font-size: var(--text-h2);
+}
+
+h3 {
+  font-size: var(--text-h3);
+}
+
+:focus-visible {
+  outline: 3px solid var(--deep);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --section-space: 5rem;
+    --nav-height: 4.375rem;
+  }
 }
